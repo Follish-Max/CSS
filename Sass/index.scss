@@ -1,0 +1,13 @@
+$primary-color: #123435;
+$primary-border: 1px solid $primary-color;
+
+body {
+  font-size: 15px;
+  color: $primary-color;
+}
+
+.page-header {
+  border: $primary-border;
+}
+
+
