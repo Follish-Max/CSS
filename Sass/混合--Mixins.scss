@@ -1,0 +1,11 @@
+@mixin alert {
+  color: #c6c8ca;
+  background-color: #f1b0b7;
+  a {
+    color: #f9f2f4;
+  }
+}
+
+.alert-warning {
+  @include alert;
+}

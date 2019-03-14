@@ -1,0 +1,16 @@
+@mixin alert($text-color,$background) {
+  color: $text-color;
+  background-color: $background;
+  a {
+    color: darken($text-color,20%);
+  }
+}
+
+.alert-warning {
+  @include alert(#8a23f1,#f35634);
+}
+
+.alert-info {
+  @include alert($background:#8a23f1,
+  $text-color:#c23541);
+}

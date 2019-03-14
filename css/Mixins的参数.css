@@ -1,0 +1,13 @@
+.alert-warning {
+  color: #8a23f1;
+  background-color: #f35634; }
+  .alert-warning a {
+    color: #570aa4; }
+
+.alert-info {
+  color: #c23541;
+  background-color: #8a23f1; }
+  .alert-info a {
+    color: #721f26; }
+
+/*# sourceMappingURL=Mixins%B5%C4%B2%CE%CA%FD.css.map */
