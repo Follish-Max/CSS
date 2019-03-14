@@ -1,0 +1,18 @@
+/*
+安装sass：
+  gem install sass
+运行Sass：
+  sass input.scss output.css
+使用Sass命令来监视某个Sass文件的改动，
+并自动编译来更新CSS
+  sass --watch input.scss:output.css
+
+*/
+编译输出的CSS有四种格式：
+    nested 嵌套
+    compact 紧凑
+    expanded 扩展
+    compressed 压缩
+
+    命令：
+    sass --watch sass:css --style compact
