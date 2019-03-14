@@ -1,0 +1,11 @@
+.alert {
+  padding: 15px;
+}
+
+.alert a {
+  font-weight: bold;
+}
+.alert-info {
+  @extend .alert;
+  background-color: #d9534f;
+}

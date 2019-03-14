@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,mBAAO;EACL,OAAO,EAAE,IAAI;;AAGf,uBAAS;EACP,WAAW,EAAE,IAAI;;AAEnB,WAAY;EAEV,gBAAgB,EAAE,OAAO",
+"sources": ["../Sass/%BC%CC%B3%D0%C0%A9%D5%B9inherit.scss"],
+"names": [],
+"file": "%BC%CC%B3%D0%C0%A9%D5%B9inherit.css"
+}
