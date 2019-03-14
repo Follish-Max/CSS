@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    /*
+
+    Less包含一套自定义的语法及一个解析器，用户可以根据这些语法定义自己的样式规则，这些规则
+    最终会通过解析器，编译生成对应的CSS文件。
+
+    eg1.
+        less文件
+    -------------------
+    @color: #4D34DF
+
+    #header {
+    color: @color;
+    }
+    h2 {
+    color: @color;
+    }
+    ------------------
+        css文件
+    ------------------
+    #header {
+      color: #4D34DF;
+    }
+    h2 {
+      color: #4D34DF;
+    }
+    --------------------
+    less中的变量也有作用域和生命周期
+    eg2.
+    ------------------
+    @width: 20px;
+    #homeDiv {
+        @width: 30px;
+        #centerDiv {
+            width: @width;//此处的width为30px
+        }
+    }
+
+    #leftDiv {
+        width: @width;//此处的width为20px
+    }
+    --------------------
+    经过编译生成的Css文件：
+    #homeDiv #centerDiv {
+        width: 30px;
+    }
+    #leftDiv {
+        width: 20px;
+    }
+
+    ---------------------
+
+
+
+
+    Mixins(混入)：Mixins其实是一种嵌套，允许将一个类嵌入到另一个类中使用
+       还可以给Mixins的参数定义一个默认值
+    eg3：
+        // 定义一个样式选择器
+        .roundedCorners(@radius:5px) {
+        -moz-border-radius: @radius;
+        -webkit-border-radius: @radius;
+        border-radius: @radius;
+        }
+        // 在另外的样式选择器中使用
+        #header {
+        .roundedCorners;
+        }
+        #footer {
+        .roundedCorners(10px);
+        }
+
+----------------------------------------
+        经过编译生成的CSS文件：
+        #header {
+            -moz-border-radius:5px;
+            -webkit-border-radius:5px;
+            border-radius:5px;
+            }
+            #footer {
+            -moz-border-radius:10px;
+            -webkit-border-radius:10px;
+            border-radius:10px;
+        }
+
+
+
+    -------------------------------
+    a {
+        color: red;
+        text-decoration: none;
+        &:hover {// 有 & 时解析的是同一个元素或此元素的伪类，没有 & 解析是后代元素
+         color: black;
+         text-decoration: underline;
+       }
+    }
+    =--------------------------------------
+    a {
+        color: red;
+        text-decoration: none;
+    }
+    a:hover {
+        color: black;
+        text-decoration: underline;
+    }
+
+
+----------------------------------
+匹配模式：
+    @_  表示匹配所有的样式
+
+
+
+
+
+
+
+     */
+</script>
+</body>
+</html>
